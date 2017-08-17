@@ -57,7 +57,5 @@ submit.onclick = function() {
   request.open('GET','http://nvivek65.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);
   // Make the request to the server and send the name 
-  
-  
-  
+
 };
