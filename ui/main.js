@@ -25,8 +25,7 @@ button.onclick = function () {
 };
 
 // Submit Name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     //Create a request object
@@ -53,7 +52,9 @@ submit.onclick = function() {
        //Not done yet
   };
   //make the request
-  request.open('GET','http://nvivek65.imad.hasura-app.io/subit-name?name=' + name,true);
+  var nameInput = document.getElementById('name');
+  var name = nameInput.value;
+  request.open('GET','http://nvivek65.imad.hasura-app.io/subit-name?name=' + name, true);
   request.send(null);
   // Make the request to the server and send the name 
   
